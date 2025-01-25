@@ -1,0 +1,40 @@
+<!--	для работы шаблона нужно создать объект startPageView с именем $startPageView	-->
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><?php $startPageView->getAppName(); ?></title>
+	
+	
+	<link type="text/css" rel="stylesheet" href="<?php echo $startPageView->getMainStylePath(); ?>"/>
+
+</head>
+		
+<body>
+	<div id="main">	
+		<?php $startPageView->renderWelcomeBlock(); ?>
+		<?php $startPageView->renderMainTable(); ?>
+		<?php $startPageView->renderViewEmployeeButton(); ?>
+		<?php $startPageView->renderUpdateEmployeeButton(); ?>
+		<?php $startPageView->renderAddEmployeeButton(); ?>
+		<?php $startPageView->renderDelEmployeeButton(); ?>
+	</div>
+
+		<?php $startPageView->renderEmployeeForm(); ?>
+		<?php $startPageView->renderMessageBox(); ?>
+		
+
+
+	<div style="display: none;">
+		<div id="support" >
+			<div id="ajax"><?php echo $startPageView->getAjaxControllerPath(); ?></div>
+		</div>
+		<script src="<?php echo $startPageView->getJSPath(); ?>"></script>
+		<div id="noscript_wraper"><noscript><h1>Для корректной работы сайта включите javascript!</h1></noscript></div>
+	</div>	
+	
+
+</body>
+</html>

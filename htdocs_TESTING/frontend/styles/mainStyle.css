@@ -1,0 +1,170 @@
+body{
+	background-color: rgba(200,230,200,0.4);
+	text-align: center;
+	font-size: 2vw;
+}
+
+
+
+#main{
+	width: 90vw;
+	margin: auto auto;
+	background-color: rgba(200,230,200,0.5);
+}
+
+
+
+#welcome{
+	border: 1px green solid;
+	border-radius: 5%;
+	width: 95%;
+	margin: auto auto;
+}
+
+
+
+.tableDiv{
+	width: 70vw;
+	color: rgb(50,100,100);
+	margin: 20px auto;
+}
+
+.tableDiv table { width: 100%; table-layout: fixed;}
+
+.tableDiv tr {
+	background-color: rgba(100,130,150,0.5);
+}
+
+.tableDiv th {
+	color: rgb(50,60,60); font-size: 1.8vw;
+}
+
+.tableDiv td { overflow: hidden; }
+
+.tableDiv td:hover {color: rgb(20,70,70); font-weight: bold; }
+
+
+
+.viewEmpButton{
+	color: rgb(170,220,220);
+	background-color: rgba(100,130,150,0.9);
+	width: 35vw;
+	padding: 1vw 2vw 1vw 2vw;
+	margin: 10px auto;
+	border-radius: 5%;
+}
+.viewEmpButton a:hover{font-weight: bold;}
+
+
+
+#employeeForm{
+	
+	background-color: rgba(70,70,70,0.4);
+	position: fixed; top: 0; bottom: 0; left: 0; right: 0;  	
+	
+	overflow: hidden;  											
+	overflow-y: auto;  											
+	z-index: 10;
+} 
+
+#employeeForm div{
+	display: block;
+	margin: 10vw auto;
+	width: 80vw; 
+	min-width: 100px;
+	z-index: 10;
+	padding-bottom: 15px; padding-left: 13px; padding-right: 13px; padding-top: 10px;
+	background-color: rgba(160,180,160,0.9);
+	box-shadow: 0vw 0vw 5vw rgba(100,100,100,0.8);
+	border-radius: 7vw;
+}
+
+#employeeForm div table {
+	width: 90%; table-layout: fixed;
+	margin: 20px auto;
+}
+
+
+#employeeForm div table tr
+{ background-color: rgba(100,130,150,0.5); }
+
+
+#employeeForm div table td{
+	padding: 0px;
+}
+
+
+#employeeForm div table td input { 
+	
+	width: 97%; 
+	height: 100%; 
+	background-color: rgba(100,130,150,0.0); 
+	border: 0px solid red; 
+	font-size: 2vw;
+}
+
+
+#employeeForm div input[type="button"]{
+	background-color: rgba(100,130,150,0.5);
+	font-size: 2vw;
+}
+#employeeForm div input[type="button"]:hover{ background-color: rgba(100,130,150,0.9); }
+#employeeForm div input[name="addWorkPlace"] { margin: auto auto; font-size: 2vw; }
+
+
+
+#work td:nth-child(1){color: red; display: none;}
+#work th:nth-child(1){color: red; display: none;}
+
+
+
+#messageBox{
+	background-color: rgba(70,70,70,0.4);
+	position: fixed; top: 0; bottom: 0; left: 0; right: 0;  	
+	
+	overflow: hidden;  											
+	overflow-y: auto;  											
+	z-index: 15;
+	
+	background-color: rgba(150,150,100,0.5);
+} 
+	
+#messageBox	div{
+	display: block;
+	margin: 10vw auto;
+	width: 80vw; 
+	min-width: 100px;
+	z-index: 10;
+	padding-bottom: 15px; padding-left: 13px; padding-right: 13px; padding-top: 10px;
+	background-color: rgba(160,180,160,0.9);
+	box-shadow: 0vw 0vw 5vw rgba(100,100,100,0.8);
+	border-radius: 7vw;
+}
+
+
+.hide {display: none;}
+.show {display: block;}
+
+
+
+
+#noscript_wraper
+{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+
+noscript
+{
+position: fixed; 
+top: 5%;
+width: 80%; 
+background-color: red; 
+font-size: 2vw; 
+color: green;
+}
+
+#support { display: none; }

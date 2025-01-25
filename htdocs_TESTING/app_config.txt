@@ -1,0 +1,16 @@
+APP_NAME = test;
+
+DB_TYPE = postgresql;
+DB_HOST = localhost;
+DB_PORT = 5432;
+DB_USER = test1;
+DB_PASSWORD = test1;
+DB = test1;
+DB_SCHEMA = employee;
+
+PAGE_STYLE = default;
+
+PATH_TO_ERROR_PAGE = /app/views/errorPageView.php;
+PATH_TO_FRONT_AJAX_CONTROLLER = /app/controllers/frontAjaxController.php;
+PATH_TO_JS_SCRIPT = /frontend/js/loaderJS.js;
+PATH_TO_MAIN_STYLE = /frontend/styles/mainStyle.css;
