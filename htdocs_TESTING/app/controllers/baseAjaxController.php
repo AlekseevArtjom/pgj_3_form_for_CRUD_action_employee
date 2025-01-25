@@ -39,7 +39,7 @@ class baseAjaxController extends baseController
 		foreach($input as $current_key=>$current_value) {
 			
 			if($input[$current_key]==NULL) {
-				echo " / ".$current_key." / missed";exit;
+				echo " / ".htmlspecialchars($current_key)." / missed";exit;
 			}
 			
 		} unset($current_value); unset($current_key);             
