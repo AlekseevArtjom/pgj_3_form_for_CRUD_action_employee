@@ -32,8 +32,8 @@ class employeeAjaxController extends baseAjaxController
 		
 		//$main_data = $main_table->getEmpDataById($this->id);  //два пути построения моделей БД 1)модели для каждой таблицы как в laravel
 		//$work_data = $work_table->getEmpWorkById($this->id);  // 2) модель для "объекта сотрудник" 
-																// сейчас т.к. проект маленький нет смысла делать шадлон для большого фреймворка,
-																// поэтому далее реализую модель для сотрудника на базе mainTableModel
+									// сейчас т.к. проект маленький нет смысла делать шадлон для большого фреймворка,
+									// поэтому далее реализую модель для сотрудника на базе mainTableModel
 		try{
 			$data = $main_table->getAllEmpDataById($this->id);
 			echo json_encode($data);
