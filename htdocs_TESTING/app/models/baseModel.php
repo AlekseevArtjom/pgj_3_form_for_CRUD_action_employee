@@ -33,8 +33,8 @@ class baseModel
 			$this->connection_PDO= new \PDO($connection_string, $model_config['USER'], $model_config['PASSWORD']);
 	       }
 			catch(\PDOException $e) {
-									echo "Database connection error: can not set connection to database!";exit;
-								   }	
+						echo "Database connection error: can not set connection to database!";exit;
+			}	
 	}
 	
 	
